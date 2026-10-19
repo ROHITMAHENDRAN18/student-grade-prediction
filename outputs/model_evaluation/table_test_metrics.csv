@@ -1,0 +1,11 @@
+,MAE,RMSE,R2
+A|MLP,0.9127,1.327,0.8198
+A|MLP (validation),1.0519,1.7778,0.7814
+A|Mean baseline,2.4097,3.128,-0.0009
+A|Ridge regression,0.9039,1.3497,0.8136
+A|Random forest,0.7625,1.1238,0.8708
+B|MLP,2.0291,2.929,0.1224
+B|MLP (validation),2.4722,3.6082,0.0995
+B|Mean baseline,2.4097,3.128,-0.0009
+B|Ridge regression,1.8715,2.7512,0.2257
+B|Random forest,1.8725,2.7327,0.236

@@ -1,0 +1,55 @@
+{
+  "batch_size": 32,
+  "max_epochs": 300,
+  "patience": 25,
+  "settings": {
+    "A": {
+      "use_grades": true,
+      "n_inputs": 45,
+      "best_config": {
+        "hidden": [
+          64,
+          32
+        ],
+        "dropout": 0.3,
+        "lr": 0.003
+      },
+      "scale": [
+        11.92511013215859,
+        3.1122373726375425
+      ],
+      "epochs_run": 81,
+      "val_RMSE": 1.777840408225622,
+      "n_params": 5441,
+      "sizes": {
+        "train": 454,
+        "val": 97,
+        "test": 98
+      }
+    },
+    "B": {
+      "use_grades": false,
+      "n_inputs": 43,
+      "best_config": {
+        "hidden": [
+          32,
+          16
+        ],
+        "dropout": 0.3,
+        "lr": 0.003
+      },
+      "scale": [
+        11.92511013215859,
+        3.1122373726375425
+      ],
+      "epochs_run": 45,
+      "val_RMSE": 3.608207397977967,
+      "n_params": 2145,
+      "sizes": {
+        "train": 454,
+        "val": 97,
+        "test": 98
+      }
+    }
+  }
+}

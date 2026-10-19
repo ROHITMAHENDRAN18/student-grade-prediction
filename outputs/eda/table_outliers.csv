@@ -1,0 +1,6 @@
+feature,lower_fence,upper_fence,iqr_outliers,iqr_pct,z_gt_3
+G2,5.5,17.5,25,3.852,7
+absences,-9.0,15.0,21,3.236,11
+G1,5.5,17.5,16,2.465,1
+G3,4.0,20.0,16,2.465,16
+age,13.0,21.0,1,0.154,3

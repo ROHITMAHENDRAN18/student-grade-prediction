@@ -1,0 +1,16 @@
+,VIF
+G2,4.21
+G1,4.2
+Walc,1.9
+Medu,1.83
+Fedu,1.77
+Dalc,1.68
+goout,1.37
+failures,1.33
+age,1.19
+freetime,1.19
+studytime,1.13
+traveltime,1.1
+absences,1.09
+famrel,1.08
+health,1.06

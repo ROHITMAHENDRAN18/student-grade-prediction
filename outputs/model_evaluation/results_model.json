@@ -1,0 +1,320 @@
+{
+ "metrics": {
+  "A": {
+   "MLP": {
+    "MAE": 0.9127398559025356,
+    "RMSE": 1.3270247604413028,
+    "R2": 0.819848815070595
+   },
+   "MLP (validation)": {
+    "MAE": 1.0518639259731646,
+    "RMSE": 1.7778402944990865,
+    "R2": 0.7813713708789943
+   },
+   "Mean baseline": {
+    "MAE": 2.4096916299559474,
+    "RMSE": 3.1279666599384637,
+    "R2": -0.0009290667692156696
+   },
+   "Ridge regression": {
+    "MAE": 0.9038809464902294,
+    "RMSE": 1.349684186378986,
+    "R2": 0.8136439959731327
+   },
+   "Random forest": {
+    "MAE": 0.7625489270744369,
+    "RMSE": 1.1238200863278,
+    "R2": 0.870796984276625
+   }
+  },
+  "B": {
+   "MLP": {
+    "MAE": 2.0290890275215614,
+    "RMSE": 2.9289891746001446,
+    "R2": 0.12236364800151156
+   },
+   "MLP (validation)": {
+    "MAE": 2.4722301394669053,
+    "RMSE": 3.608207316491225,
+    "R2": 0.09945689202881358
+   },
+   "Mean baseline": {
+    "MAE": 2.4096916299559474,
+    "RMSE": 3.1279666599384637,
+    "R2": -0.0009290667692156696
+   },
+   "Ridge regression": {
+    "MAE": 1.8715054696919966,
+    "RMSE": 2.7511627880912273,
+    "R2": 0.225695741607434
+   },
+   "Random forest": {
+    "MAE": 1.8724854509624917,
+    "RMSE": 2.7327388461639623,
+    "R2": 0.23603171262028833
+   }
+  }
+ },
+ "passfail": {
+  "A": {
+   "accuracy": 0.9387755102040817,
+   "auc": 0.9654618473895582,
+   "n_fail_test": 15,
+   "n_test": 98
+  },
+  "B": {
+   "accuracy": 0.7959183673469388,
+   "auc": 0.6473895582329317,
+   "n_fail_test": 15,
+   "n_test": 98
+  }
+ },
+ "residual_stats_A": {
+  "mean_error": 0.07044806285780303,
+  "sd_error": 1.3319666684007216,
+  "within_1": 0.673469387755102,
+  "within_2": 0.9183673469387755,
+  "shapiro_p": 5.464059291936124e-07,
+  "max_abs_error": 6.96015739440918,
+  "worst_actual": 0.0,
+  "worst_pred": 6.96015739440918
+ },
+ "residual_stats_B": {
+  "mean_error": 0.0024313878039924465,
+  "sd_error": 2.944047329819817,
+  "within_1": 0.3979591836734694,
+  "within_2": 0.5816326530612245,
+  "shapiro_p": 5.468344410642693e-06,
+  "max_abs_error": 13.92530345916748,
+  "worst_actual": 0.0,
+  "worst_pred": 13.92530345916748
+ },
+ "top_importance": {
+  "A": [
+   {
+    "feature": "G2",
+    "mean_increase": 1.5039,
+    "std": 0.1531
+   },
+   {
+    "feature": "G1",
+    "mean_increase": 0.6255,
+    "std": 0.0925
+   },
+   {
+    "feature": "goout",
+    "mean_increase": 0.0788,
+    "std": 0.0433
+   },
+   {
+    "feature": "absences",
+    "mean_increase": 0.0715,
+    "std": 0.0518
+   },
+   {
+    "feature": "reason",
+    "mean_increase": 0.0652,
+    "std": 0.0212
+   },
+   {
+    "feature": "romantic",
+    "mean_increase": 0.0503,
+    "std": 0.0249
+   },
+   {
+    "feature": "Dalc",
+    "mean_increase": 0.045,
+    "std": 0.013
+   },
+   {
+    "feature": "activities",
+    "mean_increase": 0.0384,
+    "std": 0.0248
+   },
+   {
+    "feature": "famsize",
+    "mean_increase": 0.0374,
+    "std": 0.0475
+   },
+   {
+    "feature": "failures",
+    "mean_increase": 0.037,
+    "std": 0.0147
+   }
+  ],
+  "B": [
+   {
+    "feature": "failures",
+    "mean_increase": 0.0777,
+    "std": 0.0209
+   },
+   {
+    "feature": "age",
+    "mean_increase": 0.037,
+    "std": 0.0326
+   },
+   {
+    "feature": "Walc",
+    "mean_increase": 0.0314,
+    "std": 0.0247
+   },
+   {
+    "feature": "absences",
+    "mean_increase": 0.0277,
+    "std": 0.0094
+   },
+   {
+    "feature": "studytime",
+    "mean_increase": 0.0263,
+    "std": 0.0226
+   },
+   {
+    "feature": "famrel",
+    "mean_increase": 0.0259,
+    "std": 0.0312
+   },
+   {
+    "feature": "internet",
+    "mean_increase": 0.0197,
+    "std": 0.0401
+   },
+   {
+    "feature": "Dalc",
+    "mean_increase": 0.0185,
+    "std": 0.0254
+   },
+   {
+    "feature": "freetime",
+    "mean_increase": 0.0158,
+    "std": 0.0217
+   },
+   {
+    "feature": "Fedu",
+    "mean_increase": 0.011,
+    "std": 0.0321
+   }
+  ]
+ },
+ "best_epoch": {
+  "A": 56,
+  "B": 20
+ },
+ "epochs_run": {
+  "A": 81,
+  "B": 45
+ },
+ "repeated": {
+  "A|MLP": {
+   "MAE": {
+    "mean": 0.9331,
+    "std": 0.0895
+   },
+   "RMSE": {
+    "mean": 1.401,
+    "std": 0.1925
+   },
+   "R2": {
+    "mean": 0.7978,
+    "std": 0.0475
+   }
+  },
+  "A|Mean baseline": {
+   "MAE": {
+    "mean": 2.355,
+    "std": 0.1437
+   },
+   "RMSE": {
+    "mean": 3.1401,
+    "std": 0.2158
+   },
+   "R2": {
+    "mean": -0.0038,
+    "std": 0.004
+   }
+  },
+  "A|Random forest": {
+   "MAE": {
+    "mean": 0.7993,
+    "std": 0.0598
+   },
+   "RMSE": {
+    "mean": 1.224,
+    "std": 0.1752
+   },
+   "R2": {
+    "mean": 0.8437,
+    "std": 0.0462
+   }
+  },
+  "A|Ridge regression": {
+   "MAE": {
+    "mean": 0.8398,
+    "std": 0.0978
+   },
+   "RMSE": {
+    "mean": 1.3019,
+    "std": 0.1867
+   },
+   "R2": {
+    "mean": 0.8253,
+    "std": 0.0419
+   }
+  },
+  "B|MLP": {
+   "MAE": {
+    "mean": 2.1179,
+    "std": 0.156
+   },
+   "RMSE": {
+    "mean": 2.9028,
+    "std": 0.2824
+   },
+   "R2": {
+    "mean": 0.1372,
+    "std": 0.1309
+   }
+  },
+  "B|Mean baseline": {
+   "MAE": {
+    "mean": 2.355,
+    "std": 0.1437
+   },
+   "RMSE": {
+    "mean": 3.1401,
+    "std": 0.2158
+   },
+   "R2": {
+    "mean": -0.0038,
+    "std": 0.004
+   }
+  },
+  "B|Random forest": {
+   "MAE": {
+    "mean": 2.0065,
+    "std": 0.1508
+   },
+   "RMSE": {
+    "mean": 2.7488,
+    "std": 0.3202
+   },
+   "R2": {
+    "mean": 0.2265,
+    "std": 0.1326
+   }
+  },
+  "B|Ridge regression": {
+   "MAE": {
+    "mean": 2.0045,
+    "std": 0.1992
+   },
+   "RMSE": {
+    "mean": 2.8018,
+    "std": 0.2942
+   },
+   "R2": {
+    "mean": 0.1982,
+    "std": 0.1144
+   }
+  }
+ }
+}

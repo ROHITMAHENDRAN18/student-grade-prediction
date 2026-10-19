@@ -1,0 +1,607 @@
+{
+ "shape": [
+  649,
+  33
+ ],
+ "clean_report": {
+  "rows_before": 649,
+  "missing_cells": 0,
+  "duplicate_rows": 0,
+  "rows_after": 649
+ },
+ "n_numeric": 15,
+ "n_binary": 13,
+ "n_nominal": 4,
+ "dtypes": {
+  "str": 17,
+  "int64": 16
+ },
+ "g3_desc": {
+  "mean": 11.906,
+  "median": 12.0,
+  "mode": 11.0,
+  "std": 3.231,
+  "min": 0.0,
+  "q25": 10.0,
+  "q75": 14.0,
+  "max": 19.0,
+  "skew": -0.913,
+  "kurtosis": 2.712
+ },
+ "pass_count": 549,
+ "outliers": [
+  {
+   "feature": "G2",
+   "lower_fence": 5.5,
+   "upper_fence": 17.5,
+   "iqr_outliers": 25,
+   "iqr_pct": 3.85,
+   "z_gt_3": 7
+  },
+  {
+   "feature": "absences",
+   "lower_fence": -9.0,
+   "upper_fence": 15.0,
+   "iqr_outliers": 21,
+   "iqr_pct": 3.24,
+   "z_gt_3": 11
+  },
+  {
+   "feature": "G1",
+   "lower_fence": 5.5,
+   "upper_fence": 17.5,
+   "iqr_outliers": 16,
+   "iqr_pct": 2.47,
+   "z_gt_3": 1
+  },
+  {
+   "feature": "G3",
+   "lower_fence": 4.0,
+   "upper_fence": 20.0,
+   "iqr_outliers": 16,
+   "iqr_pct": 2.47,
+   "z_gt_3": 16
+  },
+  {
+   "feature": "age",
+   "lower_fence": 13.0,
+   "upper_fence": 21.0,
+   "iqr_outliers": 1,
+   "iqr_pct": 0.15,
+   "z_gt_3": 3
+  }
+ ],
+ "bivariate": [
+  {
+   "feature": "higher",
+   "type": "binary",
+   "test": "Mann-Whitney U",
+   "statistic": 6856.5,
+   "p_value": 0.0,
+   "effect_size": 1.14074
+  },
+  {
+   "feature": "G2",
+   "type": "numeric/ordinal",
+   "test": "Spearman",
+   "statistic": 0.94445,
+   "p_value": 0.0,
+   "effect_size": 0.94445
+  },
+  {
+   "feature": "G1",
+   "type": "numeric/ordinal",
+   "test": "Spearman",
+   "statistic": 0.88329,
+   "p_value": 0.0,
+   "effect_size": 0.88329
+  },
+  {
+   "feature": "school",
+   "type": "binary",
+   "test": "Mann-Whitney U",
+   "statistic": 64220.5,
+   "p_value": 0.0,
+   "effect_size": 0.62147
+  },
+  {
+   "feature": "failures",
+   "type": "numeric/ordinal",
+   "test": "Spearman",
+   "statistic": -0.44836,
+   "p_value": 0.0,
+   "effect_size": 0.44836
+  },
+  {
+   "feature": "address",
+   "type": "binary",
+   "test": "Mann-Whitney U",
+   "statistic": 35097.0,
+   "p_value": 2e-05,
+   "effect_size": 0.36926
+  },
+  {
+   "feature": "internet",
+   "type": "binary",
+   "test": "Mann-Whitney U",
+   "statistic": 29581.5,
+   "p_value": 6e-05,
+   "effect_size": 0.35857
+  },
+  {
+   "feature": "Medu",
+   "type": "numeric/ordinal",
+   "test": "Spearman",
+   "statistic": 0.28393,
+   "p_value": 0.0,
+   "effect_size": 0.28393
+  },
+  {
+   "feature": "studytime",
+   "type": "numeric/ordinal",
+   "test": "Spearman",
+   "statistic": 0.27471,
+   "p_value": 0.0,
+   "effect_size": 0.27471
+  },
+  {
+   "feature": "sex",
+   "type": "binary",
+   "test": "Mann-Whitney U",
+   "statistic": 58916.5,
+   "p_value": 0.00063,
+   "effect_size": 0.26426
+  },
+  {
+   "feature": "Fedu",
+   "type": "numeric/ordinal",
+   "test": "Spearman",
+   "statistic": 0.23463,
+   "p_value": 0.0,
+   "effect_size": 0.23463
+  },
+  {
+   "feature": "paid",
+   "type": "binary",
+   "test": "Mann-Whitney U",
+   "statistic": 13521.5,
+   "p_value": 0.14941,
+   "effect_size": 0.23099
+  },
+  {
+   "feature": "schoolsup",
+   "type": "binary",
+   "test": "Mann-Whitney U",
+   "statistic": 22988.0,
+   "p_value": 0.02611,
+   "effect_size": 0.21697
+  },
+  {
+   "feature": "Dalc",
+   "type": "numeric/ordinal",
+   "test": "Spearman",
+   "statistic": -0.20839,
+   "p_value": 0.0,
+   "effect_size": 0.20839
+  },
+  {
+   "feature": "romantic",
+   "type": "binary",
+   "test": "Mann-Whitney U",
+   "statistic": 53185.5,
+   "p_value": 0.06719,
+   "effect_size": 0.18829
+  },
+  {
+   "feature": "Walc",
+   "type": "numeric/ordinal",
+   "test": "Spearman",
+   "statistic": -0.1709,
+   "p_value": 1e-05,
+   "effect_size": 0.1709
+  },
+  {
+   "feature": "absences",
+   "type": "numeric/ordinal",
+   "test": "Spearman",
+   "statistic": -0.15851,
+   "p_value": 5e-05,
+   "effect_size": 0.15851
+  },
+  {
+   "feature": "traveltime",
+   "type": "numeric/ordinal",
+   "test": "Spearman",
+   "statistic": -0.14695,
+   "p_value": 0.00017,
+   "effect_size": 0.14695
+  },
+  {
+   "feature": "freetime",
+   "type": "numeric/ordinal",
+   "test": "Spearman",
+   "statistic": -0.12837,
+   "p_value": 0.00105,
+   "effect_size": 0.12837
+  },
+  {
+   "feature": "famsup",
+   "type": "binary",
+   "test": "Mann-Whitney U",
+   "statistic": 48221.5,
+   "p_value": 0.45494,
+   "effect_size": 0.1216
+  },
+  {
+   "feature": "activities",
+   "type": "binary",
+   "test": "Mann-Whitney U",
+   "statistic": 47655.5,
+   "p_value": 0.03693,
+   "effect_size": 0.11966
+  },
+  {
+   "feature": "health",
+   "type": "numeric/ordinal",
+   "test": "Spearman",
+   "statistic": -0.10567,
+   "p_value": 0.00705,
+   "effect_size": 0.10567
+  },
+  {
+   "feature": "goout",
+   "type": "numeric/ordinal",
+   "test": "Spearman",
+   "statistic": -0.10497,
+   "p_value": 0.00744,
+   "effect_size": 0.10497
+  },
+  {
+   "feature": "famsize",
+   "type": "binary",
+   "test": "Mann-Whitney U",
+   "statistic": 42818.0,
+   "p_value": 0.62672,
+   "effect_size": 0.09858
+  },
+  {
+   "feature": "nursery",
+   "type": "binary",
+   "test": "Mann-Whitney U",
+   "statistic": 30822.5,
+   "p_value": 0.18188,
+   "effect_size": 0.07218
+  },
+  {
+   "feature": "age",
+   "type": "numeric/ordinal",
+   "test": "Spearman",
+   "statistic": -0.06628,
+   "p_value": 0.0916,
+   "effect_size": 0.06628
+  },
+  {
+   "feature": "Mjob",
+   "type": "nominal",
+   "test": "Kruskal-Wallis",
+   "statistic": 37.13593,
+   "p_value": 0.0,
+   "effect_size": 0.05145
+  },
+  {
+   "feature": "famrel",
+   "type": "numeric/ordinal",
+   "test": "Spearman",
+   "statistic": 0.04776,
+   "p_value": 0.22439,
+   "effect_size": 0.04776
+  },
+  {
+   "feature": "reason",
+   "type": "nominal",
+   "test": "Kruskal-Wallis",
+   "statistic": 31.62475,
+   "p_value": 0.0,
+   "effect_size": 0.04438
+  },
+  {
+   "feature": "Fjob",
+   "type": "nominal",
+   "test": "Kruskal-Wallis",
+   "statistic": 17.26521,
+   "p_value": 0.00172,
+   "effect_size": 0.0206
+  },
+  {
+   "feature": "guardian",
+   "type": "nominal",
+   "test": "Kruskal-Wallis",
+   "statistic": 8.01774,
+   "p_value": 0.01815,
+   "effect_size": 0.00932
+  },
+  {
+   "feature": "Pstatus",
+   "type": "binary",
+   "test": "Mann-Whitney U",
+   "statistic": 22963.5,
+   "p_value": 0.89648,
+   "effect_size": 0.00229
+  }
+ ],
+ "vif": {
+  "G2": 4.21,
+  "G1": 4.2,
+  "Walc": 1.9,
+  "Medu": 1.83,
+  "Fedu": 1.77,
+  "Dalc": 1.68,
+  "goout": 1.37,
+  "failures": 1.33,
+  "age": 1.19,
+  "freetime": 1.19,
+  "studytime": 1.13,
+  "traveltime": 1.1,
+  "absences": 1.09,
+  "famrel": 1.08,
+  "health": 1.06
+ },
+ "pca_var_ratio": [
+  0.2002,
+  0.129,
+  0.0896,
+  0.0846,
+  0.0751,
+  0.0664,
+  0.0607,
+  0.0573,
+  0.0531,
+  0.0514,
+  0.0417,
+  0.0369,
+  0.0242,
+  0.0211,
+  0.0086
+ ],
+ "distribution_fits": {
+  "G3_all": {
+   "mean": 11.906009244992296,
+   "std": 3.2281663339626148,
+   "skew": -0.9129093547157225,
+   "excess_kurtosis": 2.7122043191041723,
+   "dagostino_p": 1.5876416009730048e-25,
+   "ks_D": 0.12336768536358497
+  },
+  "G3_nonzero": {
+   "n": 634,
+   "mean": 12.18769716088328,
+   "std": 2.6896999580110106,
+   "skew": 0.12513433049435468,
+   "excess_kurtosis": -0.12413169562066928,
+   "dagostino_p": 0.36238375536605394,
+   "ks_D": 0.12170475689943078
+  },
+  "n_G3_zero": 15,
+  "absences": {
+   "mean": 3.6594761171032357,
+   "variance": 21.536642317715764,
+   "dispersion_index": 5.885170890188434,
+   "zero_share": 0.37596302003081666,
+   "nb_r": 0.7490988952818558,
+   "nb_p": 0.1699186002682042,
+   "tv_poisson": 0.500188773653766,
+   "tv_negbin": 0.3411135126360532
+  },
+  "pass_rate": 0.8459167950693375,
+  "pass_wilson_ci": [
+   0.8161126459058299,
+   0.8716500473690159
+  ],
+  "Dalc_pct": {
+   "1": 69.5,
+   "2": 18.6,
+   "3": 6.6,
+   "4": 2.6,
+   "5": 2.6
+  },
+  "Walc_pct": {
+   "1": 38.1,
+   "2": 23.1,
+   "3": 18.5,
+   "4": 13.4,
+   "5": 6.9
+  }
+ },
+ "group_means": {
+  "school": [
+   [
+    "GP",
+    12.58,
+    423
+   ],
+   [
+    "MS",
+    10.65,
+    226
+   ]
+  ],
+  "higher": [
+   [
+    "no",
+    8.8,
+    69
+   ],
+   [
+    "yes",
+    12.28,
+    580
+   ]
+  ],
+  "sex": [
+   [
+    "F",
+    12.25,
+    383
+   ],
+   [
+    "M",
+    11.41,
+    266
+   ]
+  ],
+  "failures": [
+   [
+    0,
+    12.51,
+    549
+   ],
+   [
+    1,
+    8.64,
+    70
+   ],
+   [
+    2,
+    8.81,
+    16
+   ],
+   [
+    3,
+    8.07,
+    14
+   ]
+  ],
+  "studytime": [
+   [
+    1,
+    10.84,
+    212
+   ],
+   [
+    2,
+    12.09,
+    305
+   ],
+   [
+    3,
+    13.23,
+    97
+   ],
+   [
+    4,
+    13.06,
+    35
+   ]
+  ],
+  "schoolsup": [
+   [
+    "no",
+    11.98,
+    581
+   ],
+   [
+    "yes",
+    11.28,
+    68
+   ]
+  ],
+  "internet": [
+   [
+    "no",
+    11.03,
+    151
+   ],
+   [
+    "yes",
+    12.17,
+    498
+   ]
+  ],
+  "address": [
+   [
+    "R",
+    11.09,
+    197
+   ],
+   [
+    "U",
+    12.26,
+    452
+   ]
+  ],
+  "romantic": [
+   [
+    "no",
+    12.13,
+    410
+   ],
+   [
+    "yes",
+    11.52,
+    239
+   ]
+  ],
+  "paid": [
+   [
+    "no",
+    11.95,
+    610
+   ],
+   [
+    "yes",
+    11.21,
+    39
+   ]
+  ]
+ },
+ "g3_zero_profile": {
+  "mean_G2_of_zero": 3.8,
+  "mean_absences_of_zero": 0.0,
+  "mean_absences_others": 3.7460567823343847,
+  "zero_with_G2_zero": 7
+ },
+ "top_corr_pairs": [
+  [
+   "G2",
+   "G3",
+   0.944
+  ],
+  [
+   "G1",
+   "G2",
+   0.893
+  ],
+  [
+   "G1",
+   "G3",
+   0.883
+  ],
+  [
+   "Medu",
+   "Fedu",
+   0.647
+  ],
+  [
+   "Dalc",
+   "Walc",
+   0.613
+  ],
+  [
+   "failures",
+   "G3",
+   -0.448
+  ],
+  [
+   "failures",
+   "G2",
+   -0.436
+  ],
+  [
+   "failures",
+   "G1",
+   -0.432
+  ]
+ ],
+ "pearson_G2_G3": 0.9185480035603508,
+ "pearson_G1_G3": 0.826387124789048
+}
